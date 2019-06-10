@@ -99,7 +99,8 @@ void delay (unsigned int howLong);
 
 void delayMicroseconds (unsigned int howLong);
 
-
+int  waitForInterrupt    (int pin, int mS) ;
+int wiringPiISR (int pin, int mode, void (*function)(void)) ;
 
 #ifdef __cplusplus
 }

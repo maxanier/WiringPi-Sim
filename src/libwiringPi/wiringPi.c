@@ -136,3 +136,13 @@ void delayMicroseconds (unsigned int howLongMicros) {
 
 	usleep (howLongMicros);
 }
+
+
+int  waitForInterrupt    (int pin, int mS){
+  usleep(1000);
+  return 0;
+}
+
+int wiringPiISR (int pin, int mode, void (*function)(void)){
+  return 0;
+}
